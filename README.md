@@ -4,16 +4,12 @@ Getting-and-Cleaning-Data
 Getting and Cleaning Data Course Project - Peer Assignment
 
 ---
-title: "CodeBook"
+title: "Readme"
 author: "Bas"
 date: "Tuesday, December 09, 2014"
 output: html_document
 ---
 
-DOWNLOAD NECESSARY PACKAGES! + LIBRARY
-
-library(dplyr)
-library(tidyr)
 
 Before starting on assignment steps the data needs to be downloaded and read into R. This is done using the following R code:
 
