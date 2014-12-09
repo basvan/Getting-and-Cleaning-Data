@@ -10,7 +10,7 @@ date: "Tuesday, December 09, 2014"
 output: html_document
 ---
 
-## SEE THE ENTIRE R SCRIPT AT THE BOTTOM OF THIS FILE!
+** SEE THE ENTIRE R SCRIPT AT THE BOTTOM OF THIS FILE! **
 
 Before starting on assignment steps the data needs to be downloaded and read into R. This is done using the following R code:
 
