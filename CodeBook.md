@@ -34,9 +34,6 @@ Below you can find information about the different variables:
 ----------------
 Measurements:
 ----------------
-Feature Selection 
-=================
-
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
@@ -84,13 +81,9 @@ kurtosis(): kurtosis of the frequency domain signal
 bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
 angle(): Angle between to vectors.
 
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable: gravityMean, tBodyAccMean, tBodyAccJerkMean, tBodyGyroMean, tBodyGyroJerkMean
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+
 ----------------
 Activity labels:
 ----------------
@@ -107,7 +100,7 @@ Subject numbers:
 Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
 
-
+--------------------------------------------------------------------------------------
 Below you can find information about TRANSFORMATIONS TO THE DATA:
 
 Step 1: combine all data into complete dataset that includes all data. The data from: subject_test.txt, X_test.txt and y_test.txt are combined by binding their columns because they contain different data about the same occurance, respectively the subjectnumber (participant), the activity they are performing (e.g. walking) and the actual measurements. The same is done for the train data files. Then both the training and testing data is combined by binding their rows together. This results in an entire data set.
